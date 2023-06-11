@@ -24,8 +24,10 @@ const LinkResult = ({ inputValue }) => {
 
   useEffect(() => {
     if (inputValue.length) {
+      // eslint-disable-next-line
       fetchData();
     }
+    // eslint-disable-next-line
   }, [inputValue]);
 
   useEffect(() => {
@@ -40,7 +42,7 @@ const LinkResult = ({ inputValue }) => {
     return <p className="noData">Loading...</p>;
   }
   if (error) {
-    return <p className="noData">Something wne t wrong :(</p>;
+    return <p className="noData">Something went wrong :(</p>;
   }
 
   return (
